@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">P2</string>
+    <string name="action_settings">Inställningar</string>
+    <string name="btnConnect">Anslut</string>
+    <string name="btnMap">Visa Karta</string>
+    <string name="btnRegister">Registrera Grupp</string>
+    <string name="btnCancel">Avbryt</string>
+    <string name="btnDisconnect">Koppla från</string>
+    <string name="tvGroups">Aktiva Grupper</string>
+    <string name="alertDialogTitle_btnRegGrp">Skapa en grupp:</string>
+    <string name="tvHintGroupname">Gruppnamn:</string>
+    <string name="tvHintUsername">Användarnamn:</string>
+    <string name="tvMembers">Medlemmar i gruppen:</string>
+    <string name="toastUpdateGrp">Uppdaterar grupper..</string>
+    <string name="toastJoinGrp">Gick med grupp</string>
+    <string name="toastMarker">Uppdaterade markör: </string>
+    <string name="toastUnsubscribe">Avregistrerades från grupp</string>
+    <string name="toastError">Fyll i fälten, tack!</string>
+    <string name="toastPositionUpdate">Position uppdaterad</string>
+
+    <string-array name="drawer_choises">
+        <item>Karta</item>
+        <item>Grupper</item>
+        <item>Fusk marker på</item>
+        <item>Fusk marker av</item>
+    </string-array>
+
+</resources>
