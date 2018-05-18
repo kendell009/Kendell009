@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Star Wars</title>
+    <link href="lab3.css" rel="stylesheet" type ="text/css" id="styleSheet">
+   
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        Star Wars
+      </header>
+      <nav>
+        
+<ul class ="topnav" id ="myTopnav">
+     <li class = "meny" >
+    <a href="javascript:void(0);" onclick ="myFunction()">Menu</a>  </li>
+  <li id ="select"  >             
+<li><a href="Lab3.html">Start</a></li>
+<li><a  href ="Filmer.html">Films</a></li>
+<li><a href="Slideshow.html">Play Images</a><li>
+           
+<select id ="choose" onchange ="onChange(this.value)" >
+    <option value = "" disabled = "disabled" selected ="selected"> Select Theme</option>
+    <option value ="1">Grey theme</option>
+     <option value ="2">Pink theme</option>
+     <option value ="3">Green theme</option>
+      </select>
+ </li> 
+    
+    </ul> 
+      </nav>
+      <main>
+          <div id ="container">
+       <h1>Films</h1> 
+         <div id ="starwars-container" >
+        <figure class = "starwars">
+            <div class ="pic">
+          <img src="images/rogueone.jpeg" alt="Rogue one pic"></div>
+            <h3>ROGUE ONE: A STAR WARS STORY</h3>
+          <p> 
+              STAR WARS 
+         <p/></figure>
+          
+             <figure class = "starwars">
+                 <div class ="pic">
+                     <img src="images/vii.jpeg" alt="Movie pic"></div>
+                     <h3> STAR WARS: EPISODE VII THE FORCE AWAKENS</h3>
+          <p >
+        STAR WARS
+          <p/></figure> 
+         
+    <figure class = "starwars">
+        <div class ="pic">
+            <img src="images/vi.jpeg" alt="Movie pic"></div>
+            <h3> STAR WARS: EPISODE VI RETURN OF THE JEDI</h3>
+          <p>
+              STAR WARS
+        </p></figure>
+          
+        <figure class = "starwars">
+            <div class ="pic">
+                <img src="images/v.jpeg" alt="Movie pic"></div>
+                <h3>STAR WARS: EPISODE V THE EMPIRE STRIKES BACK</h3>
+          <p>
+              STAR WARS
+          </p></figure>
+        
+    <figure class = "starwars">
+        <div class ="pic">
+            <img src="images/iv.jpeg" alt="Movie pic"></div>
+             <h3>STAR WARS: EPISODE IV A NEW HOPE</h3>
+            <p>
+          STAR WARS
+          </p></figure>  
+             
+             <figure class = "starwars">
+                 <div class ="pic">
+                     <img src="images/iii.jpeg" alt="Movie pic"></div>
+                     <h3>STAR WARS: EPISODE III REVENGE OF THE SITH</h3>
+          <p>
+              STAR WARS
+          </p></figure>
+          
+             <figure class = "starwars">
+                 <div class ="pic">
+                     <img src="images/ii.jpeg" alt="Movie pic"></div>
+            <h3>STAR WARS: EPISODE II ATTACK OF THE CLONES</h3>
+          <p>
+              STAR WARS
+          </p></figure>
+          
+        <figure class = "starwars">
+            <div class ="pic">
+           <img src="images/i.jpeg" alt="Movie pic"></div>
+                <h3>STAR WARS: EPISODE I THE PHANTOM MENACE</h3>
+          <p>
+              STAR WARS
+          </p></figure>
+        </div>
+        </div>
+       
+      </main>
+      <footer>
+        Made by the force
+      </footer>
+        
+        <script src="lab3.js"></script>
+    </div>		
+  </body>
+</html>

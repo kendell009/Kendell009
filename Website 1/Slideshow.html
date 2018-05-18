@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <title>Star Wars</title>
+    
+    <link href="lab3.css" rel="stylesheet" type ="text/css" id ="styleSheet">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        Star Wars
+      </header>
+      <nav>
+          
+<ul class ="topnav" id ="myTopnav">
+     <li class = "meny" >
+    <a href="javascript:void(0);" onclick ="myFunction()">Menu</a>  </li>
+  <li id ="select"  >             
+<li><a href="Lab3.html">Start</a></li>
+<li><a  href ="Filmer.html">Films</a></li>
+<li><a href="Slideshow.html">Play Images</a><li>
+           
+<select id ="choose" onchange ="onChange(this.value)" >
+    <option value = "" disabled = "disabled" selected ="selected"> Select Theme</option>
+    <option value ="1">Grey theme</option>
+     <option value ="2">Pink theme</option>
+     <option value ="3">Green theme</option>
+      </select>
+ </li> 
+    
+    </ul> 
+          
+</nav>
+<main>
+     
+<images>
+    <h2>Slide Show</h2>
+    <div class = "slideshow-container">
+  <p>The Images class animates an element in and out (takes about 3 seconds).</p>
+        <div class = "slides fade">
+     <div class = "slide-index"></div>
+    <img src="images/i.jpeg" > </div>
+        
+   <div class = "slides fade"> 
+       <div class = "slide-index"></div>
+  <img src="images/ii.jpeg" ></div>
+       
+       <div class = "slides fade">
+           <div class = "slide-index"></div>
+  <img src="images/iii.jpeg" ></div>
+           
+           <div class = "slides fade">
+               <div class = "slide-index"></div>
+    <img src="images/iv.jpeg" ></div>
+               
+               <div class = "slides fade">
+                   <div class = "slide-index"></div>
+    <img src="images/v.jpeg" ></div>
+                   
+                   <div class = "slides fade">
+                       <div class = "slide-index"></div>
+    <img src="images/vi.jpeg" ></div>
+                       
+                       <div class = "slides fade">
+                           <div class = "slide-index"></div>
+    <img  src="images/vii.jpeg"></div>
+                           
+                           <div class = "slides fade">
+                               <div class = "slide-index"></div>
+    <img  src="images/rogueone.jpeg"></div>
+     </div>
+        
+        
+</images>
+         
+        
+      </main>
+      <footer>
+        Made by the force
+      </footer>
+        <script src="lab3.js"></script>
+    </div>		
+  </body>
+</html>
