@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Main layout.
+Contains the list for the feeds/articles and the start screen.
+@author Joakim, Hanna
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+    LinearLayout that contains the toolbar.
+    @author Hanna
+    -->
+    <LinearLayout
+        android:id="@+id/toolbarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--
+        The toolbar, included from its own layout.
+        @author Hanna
+        -->
+        <include layout="@layout/tool_bar" />
+    </LinearLayout>
+
+    <!--
+    A tab bar.
+    Shows three tabs that when clicked shows different views.
+    @author Hanna
+    -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarLayout" />
+
+    <!--
+    The first tab.
+    Shows all the RSS feeds and their articles.
+    @author Hanna, Joakim
+    -->
+    <LinearLayout
+        android:id="@+id/rssView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <!--
+        Contains the RSS feeds and their articles.
+        @author Joakim
+        -->
+        <ListView
+            android:id="@+id/rssListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--
+    The second tab.
+    Shows all the saved articles.
+    @author Hanna, Joakim
+    -->
+    <LinearLayout
+        android:id="@+id/savedView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <!--
+        Contains the saved articles.
+        @author Joakim
+        -->
+        <ListView
+            android:id="@+id/savedListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <!--
+    The third tab.
+    Contains all the static articles.
+    @author Hanna, Joakim
+    -->
+    <LinearLayout
+        android:id="@+id/museumsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <!--
+        Contains the static articles.
+        @author Joakim
+        -->
+        <ListView
+            android:id="@+id/staticListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <!--
+    LinearLayout that contains the applications logotype.
+    Is hidden when the feeds are loaded.
+    @author Joakim
+    -->
+    <LinearLayout
+        android:id="@+id/startScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/startscreen"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <!--
+        The progressbar.
+        Is visible while the application is loading the RSS feeds.
+        Is hidden when the feeds are loaded.
+        @author Joakim
+        -->
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminate="true" />
+    </LinearLayout>
+
+    <!--
+    A grayed out field.
+    Is displayed as a grayed out background when an article is displayed.
+    @author Joakim
+    -->
+    <LinearLayout
+        android:id="@+id/grayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayout"
+        android:orientation="horizontal" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FunInMalmo</string>
+    <string name="showMore">Visa fler artiklar</string>
+    <string name="closeButton">Stäng artikel</string>
+    <string name="saveButton">Spara artikel</string>
+    <string name="rssTab">RSS</string>
+    <string name="savedTab">Sparade</string>
+    <string name="museumTab">Museum</string>
+    <string name="removeArticle">Ta bort artikel</string>
+    <string name="browserButton">Öppna i browser</string>
+    <string name="menuTheme">Ändra tema</string>
+    <string name="menuTextSize">Ändra textstorlek</string>
+    <string name="menuLanguage">Ändra språk</string>
+    <string name="menuChooseFeeds">Välj bland flöden</string>
+</resources>

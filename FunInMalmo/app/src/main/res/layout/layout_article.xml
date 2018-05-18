@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+View that represents an RSS article.
+Is displayed as a pop-up window.
+@author Hanna
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rssArticleView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/toolbarLayout"
+    android:background="#444444"
+    android:orientation="vertical">
+
+    <!--
+    View that allows the article to be scrollable.
+    @author Hanna
+    -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <!--
+        Layout that contains the different components.
+        @author Hanna
+        -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--
+            Contains the title of the article.
+            @author Hanna
+            -->
+            <TextView
+                android:id="@+id/rssArticleTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--
+            Contains the description of the article.
+            @author Hanna
+            -->
+            <TextView
+                android:id="@+id/rssArticleDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rssArticleTitle" />
+
+            <!--
+            Contains the open hours in the article.
+            @author Hanna
+            -->
+            <TextView
+                android:id="@+id/rssArticleOpenHours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rssArticleDescription" />
+
+            <!--
+            Contains the link of the article.
+            @author Hanna
+            -->
+            <TextView
+                android:id="@+id/rssArticleLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rssArticleOpenHours" />
+
+            <!--
+            Closes the pop-up window.
+            @author Hanna
+            -->
+            <Button
+                android:id="@+id/closeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rssArticleLink"
+                android:gravity="bottom"
+                android:text="@string/closeButton"
+                android:textAlignment="center" />
+
+            <!--
+            When clicked opens the article in a browser.
+            @author Hanna
+            -->
+            <Button
+                android:id="@+id/browserButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/closeButton"
+                android:gravity="bottom"
+                android:text="@string/browserButton"
+                android:textAlignment="center" />
+
+            <!--
+            Saves the currently viewed article.
+            If it is already saved, removes it.
+            @author Joakim
+            -->
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/browserButton"
+                android:gravity="bottom"
+                android:text="@string/saveButton"
+                android:textAlignment="center" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

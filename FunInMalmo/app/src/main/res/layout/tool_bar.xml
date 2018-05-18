@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Toolbar.
+Always shown at the top of the application.
+Contains back button, logotype, and settings.
+@author Hanna
+-->
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbaroolbar"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorPrimaryDark"
+    android:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+    <!--
+    Back button.
+    Returns to the previous view.
+    @author Hanna
+    -->
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/backbutton_dark"
+        android:gravity="top"
+        android:onClick="goBack" />
+
+    <!--
+    The applications logotype.
+    @author Hanna
+    -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/backBtn"
+        android:layout_toLeftOf="@+id/settingsBtn"
+        android:layout_toRightOf="@+id/backBtn"
+        android:foregroundGravity="top"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo_small" />
+
+    <!--
+    Settings.
+    @author Hanna
+    -->
+    <Button
+        android:id="@+id/settingsBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/settingsbutton_dark"
+        android:gravity="top"
+        android:onClick="popMenu" />
+</android.support.v7.widget.Toolbar>

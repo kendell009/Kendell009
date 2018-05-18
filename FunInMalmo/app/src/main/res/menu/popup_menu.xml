@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+Menu for settings.
+@author Hanna
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--
+    Setting: Change the theme of the application.
+    @author Hanna
+    -->
+    <!--<item-->
+    <!--android:id="@+id/item_theme"-->
+    <!--android:title="@string/menuTheme"-->
+    <!--android:visible="true"-->
+    <!--app:showAsAction="ifRoom|withText" />-->
+
+    <!--
+    Setting: Change the textsize in the application.
+    @author Hanna
+    -->
+    <!--<item-->
+    <!--android:id="@+id/item_textSize"-->
+    <!--android:title="@string/menuTextSize"-->
+    <!--android:visible="true"-->
+    <!--app:showAsAction="ifRoom|withText" />-->
+
+    <!--
+    Setting: Change the language in the application.
+    @author Hanna
+    -->
+    <item
+        android:id="@+id/item_changeLanguage"
+        android:title="@string/menuLanguage"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+
+    <!--
+    Setting: Choose which feeds to show in the application.
+    @author Hanna
+    -->
+    <!--<item-->
+    <!--android:id="@+id/item_chooseFeeds"-->
+    <!--android:title="@string/menuChooseFeeds"-->
+    <!--android:visible="true"-->
+    <!--app:showAsAction="ifRoom|withText" />-->
+</menu>
