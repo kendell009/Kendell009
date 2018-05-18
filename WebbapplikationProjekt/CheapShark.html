@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="styleSheet" href="Style.css" type="text/css" rel="stylesheet">
+    <title>Spelprojekt</title>
+    <script src="js/responsive-nav.js"></script>
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#home" class="logo" data-scroll>GameHouse</a>
+        <nav class="nav-collapse">
+            <ul>
+                <li class="menu-item active"><a href="index.html" data-scroll>Startsida</a></li>
+                <li class="menu-item"><a href="kategorisida.html" data-scroll>Kategorier</a></li>
+                <li class="menu-item"><a href="spellista.html" data-scroll>Önskelista</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 id="välkommen">Sök efter spel:</h1>
+
+        <div class="searchengine">
+            <input id="search-field" type="text" class="form-control" placeholder="Search">
+            <span class="input-group-btn">
+                  <button class="btn-info btn-lg" id="get-games" type="submit" onclick="get_games()">
+					  Sök
+                       <span class="glyphicon"></span>
+            </button>
+            </span>
+        </div>
+
+
+        <div class="container">
+            <div class="row list-group">
+                    <h2>Sökresultat:</h2>
+                </div>
+            </div>
+            <ul id="search-results" class="list-group row">
+            </ul>
+
+        <article id="about">
+            <h1>Om sidan: </h1>
+            <figure>
+                <p>Detta är en sida för dig som letar efter ett särskilt spel, vill se vad de bästa och mest ekonomiska erbjudanden är eller kanske bara vill se när den senaste versionen av ett spel släpps. Om så är fallet har du kommit rätt och här erbjuds du chansen att hitta det spelet du längtar efter där du kan bläddra mellan spelkategorier och och lägga till spel i en önskelista helt utifrån din egen smak.
+                </p>
+            </figure>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="Functions.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+    <script src="js/jquery-1.12.1.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/searchgames.js" type="text/javascript"></script>
+</body>
+
+</html>

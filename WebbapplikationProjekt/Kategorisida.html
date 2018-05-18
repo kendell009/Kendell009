@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link id="styleSheet" href="Style.css" type="text/css" rel="stylesheet">
+    <title>Spel-projekt</title>
+    <script src="js/responsive-nav.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="#home" class="logo" data-scroll>GameHouse</a>
+        <nav class="nav-collapse">
+            <ul>
+                <li class="menu-item"><a href="CheapShark.html" data-scroll>Startsida</a></li>
+                <li class="menu-item active"><a href="kategorisida.html" data-scroll>Kategorier</a></li>
+                <li class="menu-item"><a href="spellista.html" data-scroll>Önskelista</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <h1 id="välkommen">Bläddra mellan kategorier:</h1>
+
+
+        <div class="CategoriesMenu">
+            <ul class="nav">
+                <li>
+                    <button type="button" class="btn-info category" id="gameDeals" onclick="get_games_sale()">Omdömespoäng</button>
+                </li>
+                <li>
+                    <button type="button" class="btn-info category" id="gameRating" onclick="get_games_rating()">Bästa erbjudanden</button>
+                </li>
+                <li>
+                    <button type="button" class="btn-info category" id="gamesavings" onclick="get_gamesavings()">Besparingar</button>
+                </li>
+                <li>
+                    <button type="button" class="btn-info category" id="gameReleaseDate" onclick="get_gameReleaseDate()">Utgivningsdatum</button>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="container">
+            <div class="row">
+                    <h2>Sökresultat:</h2>
+            </div>
+            <ul id="search-results" class="list-group row">
+
+            </ul>
+        </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="Functions.js"></script>
+    <script src="js/fastclick.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/fixed-responsive-nav.js"></script>
+    <script src="js/jquery-1.12.1.js" type="text/javascript"></script>
+    <script src="js/Browser.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+
+</html>
